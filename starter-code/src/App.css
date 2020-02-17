@@ -1,3 +1,12 @@
+.col-4{
+  max-height: 90vh; 
+  overflow: scroll;
+}
+
+.col-7 {
+  text-align: left;
+}
+
 .App {
   text-align: center;
 }
