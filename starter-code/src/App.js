@@ -1,6 +1,4 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 import CountryDetail from './CountryDetail'
