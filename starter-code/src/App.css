@@ -2,12 +2,12 @@
   font-family: "OpenSans";
 }
 
-.col-4{
+.col-3{
   max-height: 90vh; 
   overflow: scroll;
   text-align: center;
 }
 
-.col-7 {
+.col-8 {
   text-align: left;
 }

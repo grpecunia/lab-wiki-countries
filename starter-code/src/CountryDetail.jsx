@@ -37,25 +37,55 @@ class CountryDetail extends Component {
     // let theBorders = this.findBorders()
     return (
       <div>
-        <h2>{theCountry.name.common}</h2>
-        <i>{theCountry.name.official}</i>
-        <hr />
-        <b>Capital: </b>
-        {theCountry.capital}
-        <br />
-        <hr />
-        <b>Area: </b>
-        {theCountry.area} km2
-        <hr />
-        <b>Borders: </b>
-        <ul>{this.findBorders(theCountry)}</ul>
-        <hr />
-        <b>Region: </b> {theCountry.region} <br />
-        <b>Sub-Region:</b> {theCountry.subregion}
-        <hr />
-        <b>Currency:</b> {theCountry.currency}
-        <br/>
-        <b>TLD:</b> https://example{theCountry.tld}
+        <h2>{theCountry.flag} {theCountry.name.common}</h2>
+        <table className="table table-striped">
+          <tbody>
+            <tr>
+              <td>
+                <b>Official Name: </b>
+              </td>
+              <td>{theCountry.name.official}</td>
+              <td>
+                <b>Capital: </b>
+              </td>
+              <td>{theCountry.capital}</td>
+            </tr>
+            <tr>
+              
+                <td>
+                  <b>Area: </b>
+                </td>
+                <td>{theCountry.area} km2</td>
+              <td>
+                <b>Borders: </b>
+              </td>
+              <td>
+                <ul>{this.findBorders(theCountry)}</ul>
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <b>Region: </b>
+              </td>
+              <td>{theCountry.region}</td>
+              <td>
+                <b>Sub-Region:</b>
+              </td>
+              <td>{theCountry.subregion}</td>
+            </tr>
+            <tr>
+              <td>
+                <b>Currency:</b>
+              </td>
+              <td>{theCountry.currency}</td>
+              <td>
+                <b>TLD:</b>
+              </td>
+              <td>https://example{theCountry.tld}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }

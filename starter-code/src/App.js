@@ -42,11 +42,11 @@ render() {
           </div>
         </nav>
         <div className="container row">
-          <div className="col-4">
+          <div className="col-3">
             <div className="list-group">{this.showCountryOptions()}</div>
           </div>
 
-          <div className="col-7 offset-1">
+          <div className="col-8 offset-1">
             <Switch>
               <Route
                 exact
