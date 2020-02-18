@@ -1,6 +1,10 @@
+.App {
+  font-family: "OpenSans";
+}
+
 .col-4{
   max-height: 90vh; 
-  overflow: smooth scroll;
+  overflow: scroll;
   text-align: center;
 }
 

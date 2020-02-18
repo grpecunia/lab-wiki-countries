@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
-import './App.css';
 import CountryDetail from './CountryDetail'
 import countries from './countries.json'
 import { Route, Link, Switch } from "react-router-dom";
+import './App.css';
 
 class App extends Component {
   
