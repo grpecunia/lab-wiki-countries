@@ -4,6 +4,7 @@ import CountryDetail from './CountryDetail'
 import countries from './countries.json'
 import { Route, Link, Switch } from "react-router-dom";
 import './App.css';
+import Home from './Home'
 
 class App extends Component {
   
@@ -34,7 +35,7 @@ class App extends Component {
 render() {
     return (
       <div className="App">
-        <nav className="navbar navbar-dark bg-primary mb-3">
+        <nav className="navbar navbar-dark bg-success mb-3">
           <div className="container">
             <a className="navbar-brand" href="/">
               WikiCountries
@@ -48,6 +49,13 @@ render() {
 
           <div className="col-8 offset-1">
             <Switch>
+              <Route
+                exact
+                path="/"
+                render={props => (
+                  <Home {...props} />
+                )}
+              />
               <Route
                 exact
                 path="/country/:countryId"

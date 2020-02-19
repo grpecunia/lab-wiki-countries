@@ -11,3 +11,11 @@
 .col-8 {
   text-align: left;
 }
+
+.home {
+  text-align: center;
+}
+
+img {
+  max-height: 60vh;
+}
