@@ -38,7 +38,7 @@ render() {
         <nav className="navbar navbar-dark bg-success mb-3">
           <div className="container">
             <a className="navbar-brand" href="/">
-              WikiCountries
+              WikiWorld
             </a>
           </div>
         </nav>
